@@ -41,6 +41,7 @@ LIBEDGETPU_LDFLAGS := \
 	-Wl,--soname,libedgetpu.so.1 \
 	-Wl,--version-script=$(BUILDROOT)/tflite/public/libedgetpu.lds \
 	-fuse-ld=gold \
+        -L/usr/local/lib \
 	-lflatbuffers \
 	-labsl_flags_usage \
 	-labsl_flags_internal \
